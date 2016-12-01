@@ -53,20 +53,23 @@
 
 
 //custom sass variables
-$ucla-blue: #2199e8;
+$ucla-blue: #0072b1;
 
 
 /* HEADER */
 header{
-  background-color: #727272;
+  background-color: $ucla-blue;
 
   #logo{
-    background: $ucla-blue;
     float: left;
   }
 
   nav{
     clear: both;
+
+    a{
+      color: white;
+    }
 
     li{
       text-decoration: none;
