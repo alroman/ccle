@@ -49,12 +49,55 @@
 @include motion-ui-transitions;
 @include motion-ui-animations;
 
-#logo{
-  background: #2199e8;
+@import 'components/topbar';
+
+
+//custom sass variables
+$ucla-blue: #2199e8;
+
+header{
+  background-color: #727272;
+
+  #logo{
+    background: $ucla-blue;
+    float: left;
+  }
+
+  nav{
+    clear: both;
+
+    ul{
+      list-style: none;
+    }
+    li{
+      display: inline;
+    }
+  }
+
+  .login{
+    float: right;
+  }
+  .welcome{
+    display: inline;
+  }
 }
+
+
+
+
+
+
+
 .side-bar{
   background-color: #f1f1f1;
   height: 1000px;
 }
 
-@import 'components/topbar';
+
+
+
+
+
+
+
+
