@@ -174,16 +174,22 @@ header{
 }
 
 /* MAIN */
-
+.browse{
+  background: white;
+}
 
 
 /* FOOTER */
+footer{
+  background: black;
+}
+
 #copyright{
-  float: left;
+  // float: left;
 }
 
 #footer-links{
-  float: right;
+  // float: right;
 
   li{
     list-style: none;
