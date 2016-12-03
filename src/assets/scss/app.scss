@@ -96,6 +96,7 @@ a .logo-shared{
 
 }
 
+// menu
 .menu-centered{
   clear: both;
   a{
@@ -103,6 +104,12 @@ a .logo-shared{
   }
 }
 
+.dropdown.menu > li.opens-right > .is-dropdown-submenu{
+  background-color: $ucla-blue;
+}
+.is-dropdown-submenu-parent.opens-right > .is-dropdown-submenu{
+  background-color: $ucla-blue;
+}
 
 
 /* SIDE BAR */
