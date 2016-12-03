@@ -53,8 +53,12 @@
 
 
 //custom sass variables
-$ucla-blue: #0072b1;
-$ucla-yellow: #E7D327;
+$ucla-blue: #3284bf;
+$ucla-gold: #ffe800;
+$content-link-underlined: #8237ff;
+$content-link-hover: #1e4b87;
+$ucla-font: 'Proxima Nova', 'Verdana';
+$ucla-signature: 'Caslon 540';
 
 
 /* NAV BAR */
@@ -74,7 +78,7 @@ $ucla-yellow: #E7D327;
 .logo-ccle{
     display: inline-block;
     font-size: 40px;
-    color: $ucla-yellow;
+    color: $ucla-gold;
     padding-top: 20px;
 }
 a .logo-ccle-sub{
@@ -91,7 +95,7 @@ a .logo-shared{
     color: $ucla-blue;
   }
   .button{
-    background-color: $ucla-yellow;
+    background-color: $ucla-gold;
   }
 
 }
