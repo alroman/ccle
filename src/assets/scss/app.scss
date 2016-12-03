@@ -62,43 +62,94 @@ $ucla-signature: 'Caslon 540';
 
 
 /* NAV BAR */
-.navbar{
-  background-color: $ucla-blue;
-  padding: 10px;
+header{
+  background: $ucla-blue;
 }
 
-#logo{
-  float: left;
-  padding-top: 0px;
+.logo{
+  text-align: center;
+  a{
+    color: white;
+  }
 }
 
 .logo-ucla{
-    vertical-align: baseline;
+  vertical-align: baseline;
 }
 .logo-ccle{
-    display: inline-block;
-    font-size: 40px;
-    color: $ucla-gold;
-    padding-top: 20px;
+  color: $ucla-gold;
+  font-weight: bold;
+  font-family: $ucla-font;
+  font-size: 40px;
 }
-a .logo-ccle-sub{
-  color: #c8dbf7;
+.logo-shared{
+
+  text-transform: uppercase;
 }
-a .logo-shared{
-  color: white;
+
+// BACKGROUND
+#page{
+  background: url('../../../assets/img/powell.jpg') no-repeat;
+  background-size: cover;
 }
+
+
+
+
 
 .login{
-  float: right;
-
-  a{
-    color: $ucla-blue;
-  }
   .button{
     background-color: $ucla-gold;
   }
-
+  a{
+    color: $ucla-blue;
+    font-weight: bold;
+  }
 }
+
+
+
+
+
+
+
+// .navbar{
+//   background-color: $ucla-blue;
+//   padding: 10px;
+// }
+
+// #logo{
+//   float: left;
+//   padding-top: 0px;
+// }
+
+// .logo-ucla{
+//     vertical-align: baseline;
+// }
+// .logo-ccle{
+//     display: inline-block;
+//     font-size: 40px;
+//     color: $ucla-gold;
+//     padding-top: 20px;
+// }
+// a .logo-ccle-sub{
+//   color: #c8dbf7;
+// }
+// a .logo-shared{
+//   color: white;
+// }
+
+// .login{
+//   float: right;
+
+//   a{
+//     color: $ucla-blue;
+//   }
+//   .button{
+//     background-color: $ucla-gold;
+//   }
+
+// }
 
 // menu
 .menu-centered{
