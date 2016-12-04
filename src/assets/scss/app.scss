@@ -51,11 +51,31 @@
 
 @import 'components/topbar';
 
+@font-face {
+  font-family: 'Caslon';
+  src: url('../../fonts/ufonts.com_caslon-540.ttf');
+}
+
+
+/*** PAGE STYLES ***/
+body{
+  font-family: "Lato","Helvetica Neue",Helvetica,Arial,sans-serif;
+  a{
+    color: #193185;
+  }
+}
+
+// background
+#page{
+  background: url('../../../assets/img/powell.jpg') no-repeat;
+  background-size: cover;
+}
+
+
 
 /* NAV BAR */
 header{
   background: $ucla-blue;
-
 }
 
 .row{
@@ -69,45 +89,24 @@ header{
   }
 }
 
+#ccle-menu{
+  font-weight: bolder;
+  text-transform: uppercase;
+}
+
 .logo-ucla{
   vertical-align: baseline;
 }
 .logo-ccle{
   color: $ucla-gold;
   font-weight: bold;
-  font-family: $ucla-font;
   font-size: 40px;
 }
 .logo-shared{
-
   text-transform: uppercase;
 }
 
-// BACKGROUND
-#page{
-  background: url('../../../assets/img/powell.jpg') no-repeat;
-  background-size: cover;
-}
-
-
-
-
-
-.login{
-  .button{
-    background-color: $ucla-gold;
-    border-radius: 10px;
-  }
-  a{
-    color: $ucla-blue;
-    font-weight: bold;
-  }
-}
-
-
-
-
-// menu
+// menu //
 .title-bar{
   background: #183786;
 }
@@ -124,11 +123,26 @@ header{
   color: $ucla-blue;
 }
 
+// login //
+.login{
+  .button{
+    background-color: $ucla-gold;
+    border-radius: 10px;
+  }
+  a{
+    color: $ucla-blue;
+    font-weight: bold;
+  }
+}
+
 
 /* SIDE BAR */
 .side-bar{
   background-color: #f1f1f1;
   height: 1000px;
+  a{
+    text-decoration: underline;
+  }
 }
 
 /* MAIN */
@@ -145,7 +159,7 @@ header{
 
 /* FOOTER */
 footer{
-  background: black;
+  background: $medium-gray;
 }
 
 #copyright{
@@ -163,6 +177,13 @@ footer{
 }
 
 
+
+@media #{$large-up}{
+  .top-bar{
+    padding-top: 60px;
+  }
+
+}
 
 
 
