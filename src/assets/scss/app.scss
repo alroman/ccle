@@ -57,7 +57,9 @@
 }
 
 
-/*** PAGE STYLES ***/
+/************************
+PAGE STYLES
+*************************/
 body{
   font-family: "Lato","Helvetica Neue",Helvetica,Arial,sans-serif;
   a{
@@ -73,8 +75,10 @@ body{
 
 
 
-/* NAV BAR */
-header{
+/************************
+NAV BAR
+************************/
+.header{
   background: $ucla-blue;
 }
 
@@ -136,28 +140,44 @@ header{
 }
 
 
-/* SIDE BAR */
-.side-bar{
-  background-color: #f1f1f1;
-  height: 1000px;
+
+
+/************************
+MAIN CONTENT
+************************/
+#ccle-system{
   a{
     text-decoration: underline;
   }
+
+  .tips-updates{
+    background-color: white;
+    border-radius: 2px;
+  }
+
+  .notices{
+    background-color: white;
+    border-radius: 2px;
+  }
 }
 
-/* MAIN */
-.browse{
-  background: rgba(255, 255, 255, 0.9);
-}
+#browse-courses{
+  background-color: white;
+  text-align: center;
 
-.search-box{
-  .button{
-    border-radius: 10px;
+  .search-box{
+    display: inline-flex;
+
+    .button{
+      border-radius: 10px;
+    }
   }
 }
 
 
-/* FOOTER */
+/************************
+FOOTER
+************************/
 footer{
   background: $medium-gray;
 }
@@ -177,6 +197,9 @@ footer{
 }
 
 
+@media #{$small-only}{
+
+}
 
 @media #{$large-up}{
   .top-bar{
