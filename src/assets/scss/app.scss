@@ -52,15 +52,6 @@
 @import 'components/topbar';
 
 
-//custom sass variables
-$ucla-blue: #3284bf;
-$ucla-gold: #ffe800;
-$content-link-underlined: #8237ff;
-$content-link-hover: #1e4b87;
-$ucla-font: 'Proxima Nova', 'Verdana';
-$ucla-signature: 'Caslon 540';
-
-
 /* NAV BAR */
 header{
   background: $ucla-blue;
@@ -100,6 +91,7 @@ header{
 .login{
   .button{
     background-color: $ucla-gold;
+    border-radius: 10px;
   }
   a{
     color: $ucla-blue;
@@ -156,14 +148,12 @@ header{
   clear: both;
   a{
     color: white;
+    background: $ucla-blue;
   }
 }
 
-.dropdown.menu > li.opens-right > .is-dropdown-submenu{
-  background-color: $ucla-blue;
-}
-.is-dropdown-submenu-parent.opens-right > .is-dropdown-submenu{
-  background-color: $ucla-blue;
+.dropdown li{
+  color: $ucla-blue;
 }
 
 
@@ -175,7 +165,13 @@ header{
 
 /* MAIN */
 .browse{
-  background: white;
+  background: rgba(255, 255, 255, 0.9);
+}
+
+.search-box{
+  .button{
+    border-radius: 10px;
+  }
 }
 
 

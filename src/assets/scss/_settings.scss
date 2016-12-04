@@ -73,6 +73,13 @@ $global-text-direction: ltr;
 $global-flexbox: false;
 $print-transparent-backgrounds: true;
 
+$ucla-blue: #3284bf;
+$ucla-gold: #ffe800;
+$content-link-underlined: #8237ff;
+$content-link-hover: #1e4b87;
+$ucla-font: 'Proxima Nova', 'Verdana';
+$ucla-signature: 'Caslon 540';
+
 @include add-foundation-colors;
 
 // 2. Breakpoints
@@ -559,8 +566,8 @@ $tooltip-radius: $global-radius;
 // -----------
 
 $topbar-padding: 0.5rem;
-$topbar-background: $light-gray;
-$topbar-submenu-background: $topbar-background;
+$topbar-background: $ucla-blue;
+$topbar-submenu-background: $ucla-blue;
 $topbar-title-spacing: 1rem;
 $topbar-input-width: 200px;
 $topbar-unstack-breakpoint: medium;
