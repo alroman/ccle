@@ -124,9 +124,6 @@ NAV BAR
 }
 
 // menu //
-.title-bar{
-  background: #183786;
-}
 
 .menu-centered{
   clear: both;
@@ -209,6 +206,7 @@ footer{
 }
 
 
+/*** MEDIA QUERIES ***/
 @media #{$small-only}{
   .login{
     .button{
