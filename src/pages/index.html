@@ -16,7 +16,7 @@
     <!-- end logo -->
 
     <!-- login -->
-    <div class="medium-6 large-3 column">
+    <div class="medium-6 large-3 large-push-6 column">
       <div class="login">
         <div class="welcome show-for-medium">Welcome, Guest.</div>
         <a href="https://ccle.ucla.edu/login/index.php" class="button">Login</a>
@@ -25,15 +25,15 @@
 
     <!-- end login -->
     <!-- menu -->
-    <div class="large-6 column">
-    <div class="title-bar" data-responsive-toggle="ccle-menu" data-hide-for="medium">
-      <div class="title-bar-title">Menu</div>
+    <div class="large-6 large-pull-3 column">
+    <div class="title-bar" data-responsive-toggle="ccle-menu" data-hide-for="large">
       <button class="menu-icon" type="button" data-toggle></button>
+      <div class="title-bar-title">Menu</div>
     </div>
 
     <div class="top-bar" id="ccle-menu">
       <!-- <div class="menu-centered"> -->
-        <ul class="dropdown vertical medium-horizontal menu" data-responsive-menu="drilldown medium-dropdown">
+        <ul class="dropdown vertical large-horizontal menu" data-responsive-menu="drilldown large-dropdown">
 
           <li class="has-submenu"><a>About CCLE</a>
             <ul class="submenu menu vertical" data-submenu>
@@ -98,27 +98,30 @@
 
   <div class="row">
 
-     <div id="browse-courses" class="column medium-6">
-      <h3> Browse For Courses </h3>
+     <div id="browse-courses" class="column medium-6 medium-push-4">
+        <section>
+          <h3> Browse For Courses </h3>
 
-      <div class="search-box small-9">
-        <input type="search" placeholder="Search by keywords...">
-        <button type="button" class="button">Search</button>
-      </div>
+          <div class="search-box small-9">
+            <input type="search" placeholder="Search by keywords...">
+            <button type="submit" class="button"><i class="fi-magnifying-glass"></i></button>
+          </div>
 
-      <h6>Or search by</h6>
+          <h6>Or search by</h6>
 
-      <div class="search-options">
-        <ul class="menu">
-          <li><a href="https://ccle.ucla.edu/blocks/ucla_browseby/view.php?type=subjarea">Subject area</a></li>
-          <li><a href="https://ccle.ucla.edu/blocks/ucla_browseby/view.php?type=division">Division</a></li>
-          <li><a href="https://ccle.ucla.edu/blocks/ucla_browseby/view.php?type=instructor">Instructor</a></li>
-          <li><a href="https://ccle.ucla.edu/blocks/ucla_browseby/view.php?type=collab">Collaboration sites</a></li>
-        </ul>
-      </div>
+          <div class="search-options">
+            <ul class="menu">
+              <li><a href="https://ccle.ucla.edu/blocks/ucla_browseby/view.php?type=subjarea">Subject area</a></li>
+              <li><a href="https://ccle.ucla.edu/blocks/ucla_browseby/view.php?type=division">Division</a></li>
+              <li><a href="https://ccle.ucla.edu/blocks/ucla_browseby/view.php?type=instructor">Instructor</a></li>
+              <li><a href="https://ccle.ucla.edu/blocks/ucla_browseby/view.php?type=collab">Collaboration sites</a></li>
+            </ul>
+          </div>
+        </section>
     </div>
 
-    <div id="ccle-system" class="column medium-3">
+
+    <div id="ccle-system" class="column medium-4 medium-pull-6">
 
       <section class="tips-updates">
         <h5><strong>Tips &amp; Updates</strong></h5>
@@ -151,11 +154,9 @@
     </div>
 
 
-
-    <div class="column medium-3">
+    <div class="column medium-2">
       <!-- empty on purpose -->
     </div>
-
 
   </div>
 </div>

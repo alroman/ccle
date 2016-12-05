@@ -96,6 +96,10 @@ NAV BAR
 
 // login //
 .login{
+  text-align: right;
+  margin-top: 10px;
+  color: white;
+
   .button{
     background-color: $ucla-gold;
     border-radius: 10px;
@@ -124,21 +128,13 @@ NAV BAR
 }
 
 // menu //
-
-.menu-centered{
-  clear: both;
-  a{
+.title-bar{
+  border-radius: 10px;
+  padding: 0.65rem;
+  .menu>li>a{
     color: white;
-    background: $ucla-blue;
   }
 }
-
-
-.dropdown li{
-  color: $ucla-blue;
-}
-
-
 
 
 
@@ -146,34 +142,35 @@ NAV BAR
 /************************
 MAIN CONTENT
 ************************/
+.main-content{
+  width: 95%;
+  margin: 0 auto;
+}
+
+.term{
+  text-transform: uppercase;
+  background: $medium-gray;
+}
+
 #ccle-system{
+  background-color: white;
+
   a{
     text-decoration: underline;
-  }
-
-  .tips-updates{
-    background-color: white;
-    border-radius: 2px;
-    padding: 20px;
-  }
-
-  .notices{
-    background-color: white;
-    border-radius: 2px;
-    padding: 20px;
   }
 }
 
 #browse-courses{
   background-color: white;
   text-align: center;
-  padding: 20px;
+
 
   .search-box{
     display: inline-flex;
 
     .button{
       border-radius: 10px;
+      background-color: $medium-gray;
     }
   }
 }
@@ -209,9 +206,21 @@ footer{
 /*** MEDIA QUERIES ***/
 @media #{$small-only}{
   .login{
+    margin-top:-4px;
+    margin-bottom: -15px;
     .button{
       width: 100%;
     }
+  }
+
+}
+
+@media #{$medium-up}{
+  .login{
+    .button{
+      width: 40%;
+    }
+  }
 }
 
 @media #{$large-up}{
