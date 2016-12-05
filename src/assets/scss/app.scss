@@ -132,6 +132,7 @@ NAV BAR
 .menu li{
   a{
     color: white;
+    padding: 11px;
   }
 }
 
@@ -164,6 +165,14 @@ MAIN CONTENT
   a{
     text-decoration: underline;
   }
+
+  section h5{
+    background-color: $light-gray;
+    text-align: center;
+  }
+  article{
+    border-bottom: solid 1px $dark-gray;
+  }
 }
 
 #browse-courses{
@@ -172,7 +181,12 @@ MAIN CONTENT
 
   .search-box{
     display: inline-flex;
+    form{
+      display: inline-flex;
+      width:100%;
+    }
   }
+
   .button{
     border-radius: 10px;
     background-color: $medium-gray;
@@ -231,6 +245,14 @@ footer{
       background-color: $dark-blue;
     }
   }
+  #browse-courses{
+    padding: 30px 0px;
+  }
+  #ccle-system{
+    section h5{
+      margin: 0px -10px;
+    }
+  }
 }
 
 @media #{$medium-only}{
@@ -257,6 +279,11 @@ footer{
   #browse-courses{
     padding: 40px 0px;
   }
+  #ccle-system{
+    section h5{
+      margin: 0px -15px;
+    }
+  }
 }
 
 @media #{$large-up}{
@@ -265,5 +292,8 @@ footer{
   }
   .login{
      margin-right: 25px;
+     .button{
+      width: 80%;
+     }
   }
 }

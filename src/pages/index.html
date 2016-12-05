@@ -16,7 +16,7 @@
     <!-- end logo -->
 
     <!-- login -->
-    <div class="medium-6 large-3 large-push-6 column">
+    <div class="medium-6 large-2 large-push-6 column">
       <div class="login">
         <div class="welcome show-for-medium">Welcome, Guest.</div>
         <a href="https://ccle.ucla.edu/login/index.php" class="button">Login</a>
@@ -97,8 +97,10 @@
           <h3> Browse For Courses </h3>
 
           <div class="search-box small-9">
-            <input type="search" placeholder="Search by keywords...">
-            <button type="submit" class="button"><i class="fi-magnifying-glass"></i></button>
+            <form onsubmit="window.location='https://ccle.ucla.edu/course/search.php?collab=1&course=1&bytitle=1&bydescription=1&search=' + search.value; return false;">
+              <input id="search" type="search" placeholder="Search by keywords...">
+              <button type="submit" class="button"><i class="fi-magnifying-glass"></i></button>
+            </form>
           </div>
 
           <h6>Or search by</h6>
