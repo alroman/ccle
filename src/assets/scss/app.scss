@@ -173,6 +173,10 @@ MAIN CONTENT
   article{
     border-bottom: solid 1px $dark-gray;
   }
+  .maintenance h5{
+    text-transform: uppercase;
+    background-color: rgba(139, 220, 227, 0.6);
+  }
 }
 
 #browse-courses{
