@@ -93,6 +93,19 @@ NAV BAR
   }
 }
 
+
+// login //
+.login{
+  .button{
+    background-color: $ucla-gold;
+    border-radius: 10px;
+  }
+  a{
+    color: $ucla-blue;
+    font-weight: bold;
+  }
+}
+
 #ccle-menu{
   font-weight: bolder;
   text-transform: uppercase;
@@ -123,21 +136,12 @@ NAV BAR
   }
 }
 
+
 .dropdown li{
   color: $ucla-blue;
 }
 
-// login //
-.login{
-  .button{
-    background-color: $ucla-gold;
-    border-radius: 10px;
-  }
-  a{
-    color: $ucla-blue;
-    font-weight: bold;
-  }
-}
+
 
 
 
@@ -153,17 +157,20 @@ MAIN CONTENT
   .tips-updates{
     background-color: white;
     border-radius: 2px;
+    padding: 20px;
   }
 
   .notices{
     background-color: white;
     border-radius: 2px;
+    padding: 20px;
   }
 }
 
 #browse-courses{
   background-color: white;
   text-align: center;
+  padding: 20px;
 
   .search-box{
     display: inline-flex;
@@ -174,6 +181,11 @@ MAIN CONTENT
   }
 }
 
+.search-options{
+  .menu li{
+    display: inline-block;
+  }
+}
 
 /************************
 FOOTER
@@ -198,7 +210,10 @@ footer{
 
 
 @media #{$small-only}{
-
+  .login{
+    .button{
+      width: 100%;
+    }
 }
 
 @media #{$large-up}{
