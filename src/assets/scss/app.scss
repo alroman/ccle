@@ -51,12 +51,6 @@
 
 @import 'components/topbar';
 
-@font-face {
-  font-family: 'Caslon';
-  src: url('../../fonts/ufonts.com_caslon-540.ttf');
-}
-
-
 /************************
 PAGE STYLES
 *************************/
@@ -68,10 +62,10 @@ body{
 }
 
 // background
-#page{
-  background: url('../../../assets/img/powell.jpg') no-repeat;
-  background-size: cover;
-}
+  #page{
+    background: url('../../../assets/img/powell.jpg') no-repeat;
+    background-size: 100% 100%;
+  }
 
 
 
@@ -88,6 +82,7 @@ NAV BAR
 
 .logo{
   text-align: center;
+  margin-top: 10px;
   a{
     color: white;
   }
@@ -102,7 +97,7 @@ NAV BAR
 
   .button{
     background-color: $ucla-gold;
-    border-radius: 10px;
+    border-radius: 5px;
   }
   a{
     color: $ucla-blue;
@@ -129,14 +124,22 @@ NAV BAR
 
 // menu //
 .title-bar{
-  border-radius: 10px;
+  border-radius: 5px;
   padding: 0.65rem;
-  .menu>li>a{
+  text-align: center;
+}
+
+.menu li{
+  a{
     color: white;
   }
 }
 
-
+.top-bar{
+  .submenu{
+    background-color: $ucla-blue;
+  }
+}
 
 
 /************************
@@ -150,10 +153,13 @@ MAIN CONTENT
 .term{
   text-transform: uppercase;
   background: $medium-gray;
+  h5{
+    text-align: center;
+  }
 }
 
 #ccle-system{
-  background-color: white;
+  background-color: rgba(255, 255, 255, 0.95);
 
   a{
     text-decoration: underline;
@@ -161,17 +167,22 @@ MAIN CONTENT
 }
 
 #browse-courses{
-  background-color: white;
+  background-color: rgba(255, 255, 255, 0.95);
   text-align: center;
-
 
   .search-box{
     display: inline-flex;
+  }
+  .button{
+    border-radius: 10px;
+    background-color: $medium-gray;
+  }
 
-    .button{
-      border-radius: 10px;
-      background-color: $medium-gray;
-    }
+  .menu li a{
+    color: $dark-blue;
+    padding: 5px;
+    display: inline-block;
+
   }
 }
 
@@ -181,6 +192,8 @@ MAIN CONTENT
   }
 }
 
+
+
 /************************
 FOOTER
 ************************/
@@ -189,11 +202,11 @@ footer{
 }
 
 #copyright{
-  // float: left;
+  float: left;
 }
 
 #footer-links{
-  // float: right;
+  float: right;
 
   li{
     list-style: none;
@@ -212,7 +225,27 @@ footer{
       width: 100%;
     }
   }
+  .top-bar{
+    background-color: $dark-blue;
+    ul{
+      background-color: $dark-blue;
+    }
+  }
+}
 
+@media #{$medium-only}{
+  .top-bar{
+    background-color: $dark-blue;
+    ul{
+      background-color: $dark-blue;
+    }
+  }
+  #browse-courses{
+    width: 54%;
+  }
+  #ccle-system{
+    width: 30%;
+  }
 }
 
 @media #{$medium-up}{
@@ -221,18 +254,16 @@ footer{
       width: 40%;
     }
   }
+  #browse-courses{
+    padding: 40px 0px;
+  }
 }
 
 @media #{$large-up}{
   .top-bar{
     padding-top: 60px;
   }
-
+  .login{
+     margin-right: 25px;
+  }
 }
-
-
-
-
-
-
-
