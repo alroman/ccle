@@ -238,9 +238,22 @@ MAIN CONTENT
 }
 
 .term-selector{
-
+  text-align: left;
+  margin-left: 30px;
+  font-size: 18px;
   form{
+    display: inline-block;
     width: 150px;
+  }
+  select{
+
+  }
+}
+
+#panel-instruct{
+  li{
+    display: inline-block;
+    padding: 15px;
   }
 }
 

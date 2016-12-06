@@ -108,23 +108,22 @@
         <!-- Tabs -->
         <section>
           <ul class="tabs" data-tabs id="example-tabs">
-            <li class="tabs-title is-active"><a href="#panel1" aria-selected="true">Subject Area</a></li>
-            <li class="tabs-title"><a href="#panel2">Instructors</a></li>
-            <li class="tabs-title"><a href="#panel3">Divisions</a></li>
-            <li class="tabs-title"><a href="#panel4">Collaboration Sites</a></li>
+            <li class="tabs-title is-active"><a href="#panel-subject" aria-selected="true">Subject Area</a></li>
+            <li class="tabs-title"><a href="#panel-division">Divisions</a></li>
+            <li class="tabs-title"><a href="#panel-instruct">Instructors</a></li>
+            <li class="tabs-title"><a href="#panel-collab">Collaboration Sites</a></li>
           </ul>
 
           <div class="tabs-content" data-tabs-content="example-tabs">
-<!--             <div class="tabs-panel is-active" id="panel1">
-
+            <div class="tabs-panel is-active" id="panel-subject">
+            <a href="https://ccle.ucla.edu/blocks/ucla_browseby/view.php?type=subjarea">Search by Subject Areas</a>
             </div>
-            <div class="tabs-panel" id="panel2">
 
-            </div> -->
-            <div class="tabs-panel" id="panel3">
+            <!-- search by divisions -->
+            <div class="tabs-panel" id="panel-division">
             <div class="row">
               <div class="term-selector">
-              <h6>Term</h6>
+              Term
                 <form>
                   <select>
                     <option value="16F">Fall 2016</option>
@@ -136,72 +135,108 @@
               </div>
               <div class="small-6 column">
                 <ul>
-                  <li>Arts &amp; Architecture</li>
-                  <li>Basic Biomedical Sciences</li>
-                  <li>Education &amp; Information Studies</li>
-                  <li>Engineering &amp; Applied Science</li>
-                  <li>Humanities</li>
-                  <li>International Institute</li>
-                  <li>Law</li>
-                  <li>Letters &amp; Science-Interdisciplinary</li>
-                  <li>life Science</li>
+                  <li><a href="#">Arts &amp; Architecture</a></li>
+                  <li><a href="#">Basic Biomedical Sciences</a></li>
+                  <li><a href="#">Education &amp; Information Studies</a></li>
+                  <li><a href="#">Engineering &amp; Applied Science</a></li>
+                  <li><a href="#">Humanities</a></li>
+                  <li><a href="#">International Institute</a></li>
+                  <li><a href="#">Law</a></li>
+                  <li><a href="#">Letters &amp; Science-Interdisciplinary</a></li>
+                  <li><a href="#">life Science</a></li>
                 </ul>
               </div>
               <div class="small-6 column">
                 <ul>
-                <li>Management</li>
-                <li>Medicine</li>
-                <li>Nursing</li>
-                <li>Physical Science</li>
-                <li>Public Affairs</li>
-                <li>Public Health</li>
-                <li>School of Music</li>
-                <li>School of Theater, Film, and Television</li>
-                <li>Social Science</li>
+                <li><a href="#">Management</a></li>
+                <li><a href="#">Medicine</a></li>
+                <li><a href="#">Nursing</a></li>
+                <li><a href="#">Physical Science</a></li>
+                <li><a href="#">Public Affairs</a></li>
+                <li><a href="#">Public Health</a></li>
+                <li><a href="#">School of Music</a></li>
+                <li><a href="#">School of Theater, Film, and Television</a></li>
+                <li><a href="#">Social Science</a></li>
               </ul>
               </div>
             </div>
             </div>
-            <div class="tabs-panel" id="panel4">
+
+            <!-- searchy by instructors -->
+            <div class="tabs-panel" id="panel-instruct">
+            <h6>Please select a letter to search for instructors by last name:</h6>
+              <ul>
+                <li><a href="#">A</a></li>
+                <li><a href="#">B</a></li>
+                <li><a href="#">C</a></li>
+                <li><a href="#">D</a></li>
+                <li><a href="#">E</a></li>
+                <li><a href="#">F</a></li>
+                <li><a href="#">G</a></li>
+                <li><a href="#">H</a></li>
+                <li><a href="#">I</a></li>
+                <li><a href="#">J</a></li>
+                <li><a href="#">K</a></li>
+                <li><a href="#">L</a></li>
+                <li><a href="#">M</a></li>
+                <li><a href="#">N</a></li>
+                <li><a href="#">O</a></li>
+                <li><a href="#">P</a></li>
+                <li><a href="#">Q</a></li>
+                <li><a href="#">R</a></li>
+                <li><a href="#">S</a></li>
+                <li><a href="#">T</a></li>
+                <li><a href="#">U</a></li>
+                <li><a href="#">V</a></li>
+                <li><a href="#">W</a></li>
+                <li><a href="#">X</a></li>
+                <li><a href="#">Y</a></li>
+                <li><a href="#">Z</a></li>
+              </ul>
+
+            </div>
+
+            <!-- search by collab sites -->
+            <div class="tabs-panel" id="panel-collab">
               <h6>Available collaboration site categories:</h6>
               <div class="small-6 column">
                 <ul>
-                  <li>Academic Governance</li>
-                  <li>Arts and Architecture</li>
-                  <li>Basic Biomedical Sciences</li>
-                  <li>College Academic Counseling</li>
-                  <li>Common Collaboration &amp; Learning Environment</li>
-                  <li>Dentistry</li>
-                  <li>Education &amp; Information Studies</li>
-                  <li>Engineering &amp; Applied Science</li>
-                  <li>Health &amp; Wellness</li>
-                  <li>Humanities</li>
-                  <li>International Institute</li>
-                  <li>IT Collaborations</li>
-                  <li>Law</li>
-                  <li>Letters &amp; Science Interdisciplinary</li>
-                  <li>Library</li>
+                  <li><a href="#">Academic Governance</a></li>
+                  <li><a href="#">Arts and Architecture</a></li>
+                  <li><a href="#">Basic Biomedical Sciences</a></li>
+                  <li><a href="#">College Academic Counseling</a></li>
+                  <li><a href="#">Common Collaboration &amp; Learning Environment</a></li>
+                  <li><a href="#">Dentistry</li>
+                  <li><a href="#">Education &amp; Information Studies</a></li>
+                  <li><a href="#">Engineering &amp; Applied Science</a></li>
+                  <li><a href="#">Health &amp; Wellness</a></li>
+                  <li><a href="#">Humanities</a></li>
+                  <li><a href="#">International Institute</a></li>
+                  <li><a href="#">IT Collaborations</a></li>
+                  <li><a href="#">Law</a></li>
+                  <li><a href="#">Letters &amp; Science Interdisciplinary</a></li>
+                  <li><a href="#">Library</a></li>
+                  <li><a href="#">Life Science</a></li>
                 </ul>
               </div>
               <div class="small-6 column">
                 <ul>
-                  <li>Life Science</li>
-                  <li>Management</li>
-                  <li>Medicine</li>
-                  <li>Nursing</li>
-                  <li>Office of Information Technology</li>
-                  <li>Office of Instructional Development</li>
-                  <li>Office of Residential Life</li>
-                  <li>Physical Science</li>
-                  <li>Public Affairs</li>
-                  <li>Public Health</li>
-                  <li>School of Music</li>
-                  <li>Student Affairs</li>
-                  <li>UCLA Recreation</li>
-                  <li>UCOP Sandbox</li>
-                  <li>UCSD</li>
-                  <li>Unaffiliated Sites</li>
-                  <li>School of Theater, Film, and Television</li>
+                  <li><a href="#">Management</a></li>
+                  <li><a href="#">Medicine</a></li>
+                  <li><a href="#">Nursing</a></li>
+                  <li><a href="#">Office of Information Technology</a></li>
+                  <li><a href="#">Office of Instructional Development</a></li>
+                  <li><a href="#">Office of Residential Life</a></li>
+                  <li><a href="#">Physical Science</a></li>
+                  <li><a href="#">Public Affairs</a></li>
+                  <li><a href="#">Public Health</a></li>
+                  <li><a href="#">School of Music</a></li>
+                  <li><a href="#">Student Affairs</a></li>
+                  <li><a href="#">UCLA Recreation</a></li>
+                  <li><a href="#">UCOP Sandbox</a></li>
+                  <li><a href="#">UCSD</a></li>
+                  <li><a href="#">Unaffiliated Sites</a></li>
+                  <li><a href="#">School of Theater, Film, and Television</a></li>
                 </ul>
               </div>
             </div>
@@ -210,18 +245,7 @@
     </div>
 
 
-
-
-
-
-
-
-
-
-
-
-
-
+    <!-- CCLE Maintenance -->
     <div id="ccle-system" class="column medium-4 medium-pull-6 large-3">
 
       <section class="maintenance">
