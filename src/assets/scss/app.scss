@@ -195,7 +195,7 @@ MAIN CONTENT
   }
 
   .button{
-    border-radius: 10px;
+    // border-radius: 10px;
     background-color: $medium-gray;
   }
 
@@ -303,9 +303,10 @@ footer{
       width: 80%;
      }
   }
-
+  .main-content{
+    margin: 50px auto;
+  }
   #browse-courses{
-
     margin-left: -50px
   }
 }
