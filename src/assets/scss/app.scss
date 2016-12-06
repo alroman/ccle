@@ -61,12 +61,11 @@ body{
   }
 }
 
-// background
+// background //
   #page{
     background: url('../../../assets/img/powell.jpg') no-repeat;
     background-size: 100% 100%;
   }
-
 
 
 /************************
@@ -105,25 +104,28 @@ NAV BAR
   }
 }
 
+// logo //
+.logo-ucla{
+  vertical-align: baseline;
+}
+
+.logo-ccle{
+  color: $ucla-gold;
+  font-weight: bold;
+  font-size: 40px;
+}
+
+.logo-shared{
+  text-transform: uppercase;
+}
+
+// menu //
 #ccle-menu{
   font-weight: bolder;
   font-size: 14px;
   text-transform: uppercase;
 }
 
-.logo-ucla{
-  vertical-align: baseline;
-}
-.logo-ccle{
-  color: $ucla-gold;
-  font-weight: bold;
-  font-size: 40px;
-}
-.logo-shared{
-  text-transform: uppercase;
-}
-
-// menu //
 .title-bar{
   border-radius: 5px;
   padding: 0.65rem;
@@ -152,6 +154,7 @@ MAIN CONTENT
   margin: 0 auto;
 }
 
+// term and week //
 .term{
   text-transform: uppercase;
   background: $medium-gray;
@@ -162,6 +165,7 @@ MAIN CONTENT
   }
 }
 
+// maintenance notices //
 #ccle-system{
   background-color: rgba(255, 255, 255, 0.95);
 
@@ -182,6 +186,7 @@ MAIN CONTENT
   }
 }
 
+// browse courses //
 #browse-courses{
   background-color: rgba(255, 255, 255, 0.95);
   text-align: center;
@@ -195,7 +200,6 @@ MAIN CONTENT
   }
 
   .button{
-    // border-radius: 10px;
     background-color: $medium-gray;
   }
 
@@ -207,12 +211,38 @@ MAIN CONTENT
   }
 }
 
-.search-options{
-  .menu li{
+// .search-options{
+//   .menu li{
+//     display: inline-block;
+//   }
+// }
+
+// tabs //
+.tabs{
+  text-align: center;
+  .tabs-title{
     display: inline-block;
+    float: none;
   }
 }
 
+.tabs-content{
+  h6{
+    text-align: left;
+    margin-left: 30px;
+  }
+  ul{
+    list-style: none;
+    text-align: left;
+  }
+}
+
+.term-selector{
+
+  form{
+    width: 150px;
+  }
+}
 
 
 /************************
@@ -237,7 +267,9 @@ footer{
 }
 
 
-/*** MEDIA QUERIES ***/
+/************************
+MEDIA QUERIES
+************************/
 @media #{$small-only}{
   .login{
     margin-top:-4px;

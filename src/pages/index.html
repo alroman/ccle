@@ -91,7 +91,7 @@
 <div class="main-content">
 
   <div class="row">
-
+      <!-- Browse Courses -->
      <div id="browse-courses" class="column medium-6 medium-push-5 large-7">
         <section>
           <h3> Browse For Courses </h3>
@@ -105,19 +105,121 @@
 
           <h6>Or search by</h6>
 
-          <div class="search-options">
-            <ul class="menu">
-              <li><a href="https://ccle.ucla.edu/blocks/ucla_browseby/view.php?type=subjarea">Subject area</a></li>
-              &#9679;
-              <li><a href="https://ccle.ucla.edu/blocks/ucla_browseby/view.php?type=division">Division</a></li>
-              &#9679;
-              <li><a href="https://ccle.ucla.edu/blocks/ucla_browseby/view.php?type=instructor">Instructor</a></li>
-              &#9679;
-              <li><a href="https://ccle.ucla.edu/blocks/ucla_browseby/view.php?type=collab">Collaboration sites</a></li>
-            </ul>
+        <!-- Tabs -->
+        <section>
+          <ul class="tabs" data-tabs id="example-tabs">
+            <li class="tabs-title is-active"><a href="#panel1" aria-selected="true">Subject Area</a></li>
+            <li class="tabs-title"><a href="#panel2">Instructors</a></li>
+            <li class="tabs-title"><a href="#panel3">Divisions</a></li>
+            <li class="tabs-title"><a href="#panel4">Collaboration Sites</a></li>
+          </ul>
+
+          <div class="tabs-content" data-tabs-content="example-tabs">
+<!--             <div class="tabs-panel is-active" id="panel1">
+
+            </div>
+            <div class="tabs-panel" id="panel2">
+
+            </div> -->
+            <div class="tabs-panel" id="panel3">
+            <div class="row">
+              <div class="term-selector">
+              <h6>Term</h6>
+                <form>
+                  <select>
+                    <option value="16F">Fall 2016</option>
+                    <option value="16W">Winter 2016</option>
+                    <option value="17S">Spring 2017</option>
+                    <option value="17SS">Summer 2017</option>
+                  </select>
+                </form>
+              </div>
+              <div class="small-6 column">
+                <ul>
+                  <li>Arts &amp; Architecture</li>
+                  <li>Basic Biomedical Sciences</li>
+                  <li>Education &amp; Information Studies</li>
+                  <li>Engineering &amp; Applied Science</li>
+                  <li>Humanities</li>
+                  <li>International Institute</li>
+                  <li>Law</li>
+                  <li>Letters &amp; Science-Interdisciplinary</li>
+                  <li>life Science</li>
+                </ul>
+              </div>
+              <div class="small-6 column">
+                <ul>
+                <li>Management</li>
+                <li>Medicine</li>
+                <li>Nursing</li>
+                <li>Physical Science</li>
+                <li>Public Affairs</li>
+                <li>Public Health</li>
+                <li>School of Music</li>
+                <li>School of Theater, Film, and Television</li>
+                <li>Social Science</li>
+              </ul>
+              </div>
+            </div>
+            </div>
+            <div class="tabs-panel" id="panel4">
+              <h6>Available collaboration site categories:</h6>
+              <div class="small-6 column">
+                <ul>
+                  <li>Academic Governance</li>
+                  <li>Arts and Architecture</li>
+                  <li>Basic Biomedical Sciences</li>
+                  <li>College Academic Counseling</li>
+                  <li>Common Collaboration &amp; Learning Environment</li>
+                  <li>Dentistry</li>
+                  <li>Education &amp; Information Studies</li>
+                  <li>Engineering &amp; Applied Science</li>
+                  <li>Health &amp; Wellness</li>
+                  <li>Humanities</li>
+                  <li>International Institute</li>
+                  <li>IT Collaborations</li>
+                  <li>Law</li>
+                  <li>Letters &amp; Science Interdisciplinary</li>
+                  <li>Library</li>
+                </ul>
+              </div>
+              <div class="small-6 column">
+                <ul>
+                  <li>Life Science</li>
+                  <li>Management</li>
+                  <li>Medicine</li>
+                  <li>Nursing</li>
+                  <li>Office of Information Technology</li>
+                  <li>Office of Instructional Development</li>
+                  <li>Office of Residential Life</li>
+                  <li>Physical Science</li>
+                  <li>Public Affairs</li>
+                  <li>Public Health</li>
+                  <li>School of Music</li>
+                  <li>Student Affairs</li>
+                  <li>UCLA Recreation</li>
+                  <li>UCOP Sandbox</li>
+                  <li>UCSD</li>
+                  <li>Unaffiliated Sites</li>
+                  <li>School of Theater, Film, and Television</li>
+                </ul>
+              </div>
+            </div>
           </div>
         </section>
     </div>
+
+
+
+
+
+
+
+
+
+
+
+
 
 
     <div id="ccle-system" class="column medium-4 medium-pull-6 large-3">
