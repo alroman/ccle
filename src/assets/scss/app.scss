@@ -211,12 +211,6 @@ MAIN CONTENT
   }
 }
 
-// .search-options{
-//   .menu li{
-//     display: inline-block;
-//   }
-// }
-
 // tabs //
 .tabs{
   text-align: center;
@@ -240,12 +234,14 @@ MAIN CONTENT
 .term-selector{
   text-align: left;
   margin-left: 30px;
-  font-size: 18px;
+  font-size: 14px;
   form{
     display: inline-block;
     width: 150px;
   }
   select{
+    height: 2.0rem;
+    font-size: 0.8rem;
 
   }
 }
