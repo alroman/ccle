@@ -50,3 +50,304 @@
 @include motion-ui-animations;
 
 @import 'components/topbar';
+
+/************************
+PAGE STYLES
+*************************/
+body{
+  font-family: "Lato","Helvetica Neue",Helvetica,Arial,sans-serif;
+  a{
+    color: $dark-blue;
+  }
+}
+
+// background //
+  #page{
+    background: url('../../../assets/img/powell.jpg') no-repeat;
+    background-size: 100% 100%;
+  }
+
+
+/************************
+NAV BAR
+************************/
+.header{
+  background: $ucla-blue;
+}
+
+.row{
+  max-width: 100%;
+}
+
+.logo{
+  text-align: center;
+  margin-top: 10px;
+  a{
+    color: white;
+  }
+}
+
+
+// login //
+.login{
+  text-align: right;
+  margin-top: 10px;
+  color: white;
+
+  .button{
+    background-color: $ucla-gold;
+    border-radius: 5px;
+  }
+  a{
+    color: $ucla-blue;
+    font-weight: bold;
+  }
+}
+
+// logo //
+.logo-ucla{
+  vertical-align: baseline;
+}
+
+.logo-ccle{
+  color: $ucla-gold;
+  font-weight: bold;
+  font-size: 40px;
+}
+
+.logo-shared{
+  text-transform: uppercase;
+}
+
+// menu //
+#ccle-menu{
+  font-weight: bolder;
+  font-size: 14px;
+  text-transform: uppercase;
+}
+
+.title-bar{
+  border-radius: 5px;
+  padding: 0.65rem;
+  text-align: center;
+}
+
+.menu li{
+  a{
+    color: white;
+    padding: 11px;
+  }
+}
+
+.top-bar{
+  .submenu{
+    background-color: $ucla-blue;
+  }
+}
+
+
+/************************
+MAIN CONTENT
+************************/
+.main-content{
+  width: 95%;
+  margin: 0 auto;
+}
+
+// term and week //
+.term{
+  text-transform: uppercase;
+  background: $medium-gray;
+  h5{
+    text-align: center;
+    font-size: 15px;
+    padding-top: 5px;
+  }
+}
+
+// maintenance notices //
+#ccle-system{
+  background-color: rgba(255, 255, 255, 0.95);
+
+  a{
+    text-decoration: underline;
+  }
+
+  section h5{
+    background-color: $light-gray;
+    text-align: center;
+  }
+  article{
+    border-bottom: solid 1px $dark-gray;
+  }
+  .maintenance h5{
+    text-transform: uppercase;
+    background-color: rgba(139, 220, 227, 0.6);
+  }
+}
+
+// browse courses //
+#browse-courses{
+  background-color: rgba(255, 255, 255, 0.95);
+  text-align: center;
+
+  .search-box{
+    display: inline-flex;
+    form{
+      display: inline-flex;
+      width:100%;
+    }
+  }
+
+  .button{
+    background-color: $medium-gray;
+  }
+
+  .menu li a{
+    color: $dark-blue;
+    padding: 5px;
+    display: inline-block;
+
+  }
+}
+
+// tabs //
+.tabs{
+  text-align: center;
+  .tabs-title{
+    display: inline-block;
+    float: none;
+  }
+}
+
+.tabs-content{
+  h6{
+    text-align: left;
+    margin-left: 30px;
+  }
+  ul{
+    list-style: none;
+    text-align: left;
+  }
+}
+
+.term-selector{
+  text-align: left;
+  margin-left: 30px;
+  font-size: 14px;
+  form{
+    display: inline-block;
+    width: 150px;
+  }
+  select{
+    height: 2.0rem;
+    font-size: 0.8rem;
+
+  }
+}
+
+#panel-instruct{
+  li{
+    display: inline-block;
+    padding: 15px;
+  }
+}
+
+
+/************************
+FOOTER
+************************/
+footer{
+  background: $medium-gray;
+}
+
+#copyright{
+  float: left;
+}
+
+#footer-links{
+  float: right;
+
+  li{
+    list-style: none;
+    display: inline;
+  }
+
+}
+
+
+/************************
+MEDIA QUERIES
+************************/
+@media #{$small-only}{
+  .login{
+    margin-top:-4px;
+    margin-bottom: -15px;
+    .button{
+      width: 100%;
+    }
+  }
+  .top-bar{
+    background-color: $dark-blue;
+    ul{
+      background-color: $dark-blue;
+    }
+  }
+  #browse-courses{
+    padding: 30px 0px;
+  }
+  #ccle-system{
+    section h5{
+      margin: 0px -10px;
+    }
+  }
+}
+
+@media #{$medium-only}{
+  .top-bar{
+    background-color: $dark-blue;
+    ul{
+      background-color: $dark-blue;
+    }
+  }
+  #browse-courses{
+    width: 54%;
+  }
+  #ccle-system{
+    width: 30%;
+  }
+}
+
+@media #{$medium-up}{
+  .login{
+    .button{
+      width: 40%;
+    }
+  }
+  #browse-courses{
+    padding: 40px 0px;
+  }
+  #ccle-system{
+    section h5{
+      margin: 0px -15px;
+    }
+  }
+}
+
+@media #{$large-up}{
+  .top-bar{
+    padding-top: 60px;
+  }
+  .login{
+     margin-right: 25px;
+     .button{
+      width: 80%;
+     }
+  }
+  .main-content{
+    margin: 50px auto;
+  }
+  #browse-courses{
+    margin-left: -50px
+  }
+}

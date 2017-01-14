@@ -1,18 +1,367 @@
-<div class="row">
-  <div class="column medium-3" style="background-color: #f1f1f1; height: 1000px">
-      <h1>CCLE | <small>Common Collaboration & Learning Environment</small></h1>
-  </div>
-  <div class="column medium-3">
-      <h2> Browse By </h1>
-      <ul class="menu">
-          <li><a href="#">Subject area</a></li>
-          <li><a href="#">Division</a></li>
-          <li><a href="#">Instructor</a></li>
-          <li><a href="#">Collaboration sites</a></li>
-      </ul>
+<small>
+<div id="page">
 
-  </div>
-  <div class="column medium-6">
-      <!-- empty on purpose -->
+<!-- NAV -->
+<div class="header">
+  <div class="row">
+    <!-- logo -->
+    <div class=" medium-6 large-3 column logo">
+      <a href="#">
+        <img class="logo-ucla" src="../assets/img/ucla-logo.png">
+        <span class="logo-ccle">CCLE</span>
+        <div class="logo-ccle-sub show-for-large">Common Collaboration <br>&amp; Learning Environment</div>
+        <span class="logo-shared">Shared System</span>
+      </a>
+    </div>
+    <!-- end logo -->
+
+    <!-- login -->
+    <div class="medium-6 large-2 large-push-6 column">
+      <div class="login">
+        <div class="welcome show-for-medium">Welcome, Guest.</div>
+        <a href="https://ccle.ucla.edu/login/index.php" class="button">Login</a>
+      </div>
+    </div>
+
+    <!-- end login -->
+    <!-- menu -->
+    <div class="large-6 large-pull-3 column">
+    <div class="title-bar" data-responsive-toggle="ccle-menu" data-hide-for="large">
+        <button class="menu-icon" type="button" data-toggle></button>
+        <div class="title-bar-title">Menu</div>
+    </div>
+
+    <div class="top-bar" id="ccle-menu">
+        <ul class="dropdown vertical large-horizontal menu" data-responsive-menu="drilldown large-dropdown">
+
+          <li class="has-submenu"><a>About CCLE</a>
+            <ul class="submenu menu vertical" data-submenu>
+              <li><a href="https://ccle.ucla.edu/course/view/aboutccle">What is CCLE</a></li>
+              <li><a href="https://docs.ccle.ucla.edu/w/Help_%26_Documentation">Help Topics</a></li>
+              <li><a href="https://ccle.ucla.edu/course/request.php">Collaboration Site Request</a></li>
+              <li><a href="https://docs.ccle.ucla.edu/w/Tips_and_Updates">Updates Archive</a></li>
+            </ul>
+          </li>
+
+
+          <li><a href="http://my.ucla.edu/">MyUCLA</a></li>
+
+          <li><a href="#">UCLA Links</a></li>
+
+          <li class="has-submenu"><a href="#">Wellness</a>
+            <ul class="submenu menu vertical">
+              <li><a href="http://www.cae.ucla.edu/">Disability Services</a></li>
+              <li><a href="http://www.counseling.ucla.edu/">Counseling &amp; Psychological Services</a></li>
+            </ul>
+          </li>
+
+
+          <li class="has-submenu"><a href="#">Need Help?</a>
+            <ul class="submenu menu vertical">
+              <li>
+                <a href="#">Help Topics</a>
+                <ul class="menu">
+                  <li><a href="#">Instructors</a></li>
+                  <li><a href="#">Students</a></li>
+                  <li><a href="#">Staff</a></li>
+                  <li><a href="https://docs.ccle.ucla.edu/w/Help_%26_Documentation">Help Docs</a></li>
+                </ul>
+              </li>
+              <li><a href="https://ccle.ucla.edu/course/request.php">Request a Collaboration Site</a></li>
+              <li><a href="https://ccle.ucla.edu/blocks/ucla_help/index.php">Report a Problem/Help Request</a></li>
+            </ul>
+          </li>
+
+        </ul>
+    </div>
+    </div>
+    </div>
+    <!-- end menu -->
+</div>
+<!-- END NAV -->
+
+<div class="row">
+  <div class="column term">
+    <h5>Fall 2016 - Week 10</h5>
   </div>
 </div>
+
+
+<!-- MAIN CONTENT -->
+<div class="main-content">
+
+  <div class="row">
+      <!-- Browse Courses -->
+     <div id="browse-courses" class="column medium-6 medium-push-5 large-7">
+        <section>
+          <h3> Browse For Courses </h3>
+
+          <div class="search-box small-9">
+            <form onsubmit="window.location='https://ccle.ucla.edu/course/search.php?collab=1&course=1&bytitle=1&bydescription=1&search=' + search.value; return false;">
+              <input id="search" type="search" placeholder="Search by keywords...">
+              <button type="submit" class="button"><i class="fi-magnifying-glass"></i></button>
+            </form>
+          </div>
+
+          <h6>Or search by</h6>
+
+        <!-- Tabs -->
+        <section>
+          <ul class="tabs" data-tabs id="example-tabs">
+            <li class="tabs-title is-active"><a href="#panel-subject" aria-selected="true">Subject Area</a></li>
+            <li class="tabs-title"><a href="#panel-division">Divisions</a></li>
+            <li class="tabs-title"><a href="#panel-instruct">Instructors</a></li>
+            <li class="tabs-title"><a href="#panel-collab">Collaboration Sites</a></li>
+          </ul>
+
+          <div class="tabs-content" data-tabs-content="example-tabs">
+            <div class="tabs-panel is-active" id="panel-subject">
+              <div class="row">
+                <div class="term-selector">
+                Term
+                  <form>
+                    <select>
+                      <option value="16F">Fall 2016</option>
+                      <option value="16W">Winter 2016</option>
+                      <option value="17S">Spring 2017</option>
+                      <option value="17SS">Summer 2017</option>
+                    </select>
+                  </form>
+                </div>
+
+                <div class="small-4 column">
+                  <ul>
+                    <li><a href="#">African American Studies</a></li>
+                    <li><a href="#">African Studies</a></li>
+                    <li><a href="#">American Sign Language</a></li>
+                    <li><a href="#">Ancient Near East</a></li>
+                    <li><a href="#">Anthropology</a></li>
+                    <li><a href="#">Applied Linguistics</a></li>
+                    <li><a href="#">Arabic</a></li>
+                    <li><a href="#">Architecture and Urban Design</a></li>
+                    <li><a href="#">Armenian</a></li>
+                    <li><a href="#">Art</a></li>
+                    <li><a href="#">Art History</a></li>
+                  </ul>
+                </div>
+                <div class="small-4 column">
+                  <ul>
+                    <li><a href="#">Arts and Architecture</a></li>
+                    <li><a href="#">Arts Education</a></li>
+                    <li><a href="#">Asian</a></li>
+                    <li><a href="#">Astronomy</a></li>
+                    <li><a href="#">Atmospheric and Oceanic Sciences</a></li>
+                    <li><a href="#">Bioengineering</a></li>
+                    <li><a href="#">Bioinformatics (Graduate)</a></li>
+                    <li><a href="#">Biological Chemistry</a></li>
+                    <li><a href="#">Biomedical Research</a></li>
+                    <li><a href="#">Biostatistics</a></li>
+                  </ul>
+                </div>
+                <div class="small-4 column">
+                  <ul>
+                    <li><a href="#">Chemical Engineering</a></li>
+                    <li><a href="#">Chemistry and Biochemistry</a></li>
+                    <li><a href="#">Chicana and Chicano Studies</a></li>
+                    <li><a href="#">Chinese</a></li>
+                    <li><a href="#">Civil and Environmental Engineering</a></li>
+                    <li><a href="#">Classics</a></li>
+                    <li><a href="#">Communication Studies</a></li>
+                    <li><a href="#">Community Health Sciences</a></li>
+                    <li><a href="#">Comparative Literature</a></li>
+                    <li><a href="https://ccle.ucla.edu/blocks/ucla_browseby/view.php?type=subjarea">Subject Area</a></li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+
+            <!-- search by divisions -->
+            <div class="tabs-panel" id="panel-division">
+            <div class="row">
+              <div class="term-selector">
+              Term
+                <form>
+                  <select>
+                    <option value="16F">Fall 2016</option>
+                    <option value="16W">Winter 2016</option>
+                    <option value="17S">Spring 2017</option>
+                    <option value="17SS">Summer 2017</option>
+                  </select>
+                </form>
+              </div>
+              <div class="small-6 column">
+                <ul>
+                  <li><a href="#">Arts &amp; Architecture</a></li>
+                  <li><a href="#">Basic Biomedical Sciences</a></li>
+                  <li><a href="#">Education &amp; Information Studies</a></li>
+                  <li><a href="#">Engineering &amp; Applied Science</a></li>
+                  <li><a href="#">Humanities</a></li>
+                  <li><a href="#">International Institute</a></li>
+                  <li><a href="#">Law</a></li>
+                  <li><a href="#">Letters &amp; Science-Interdisciplinary</a></li>
+                  <li><a href="#">life Science</a></li>
+                </ul>
+              </div>
+              <div class="small-6 column">
+                <ul>
+                <li><a href="#">Management</a></li>
+                <li><a href="#">Medicine</a></li>
+                <li><a href="#">Nursing</a></li>
+                <li><a href="#">Physical Science</a></li>
+                <li><a href="#">Public Affairs</a></li>
+                <li><a href="#">Public Health</a></li>
+                <li><a href="#">School of Music</a></li>
+                <li><a href="#">School of Theater, Film, and Television</a></li>
+                <li><a href="#">Social Science</a></li>
+              </ul>
+              </div>
+            </div>
+            </div>
+
+            <!-- searchy by instructors -->
+            <div class="tabs-panel" id="panel-instruct">
+            <h6>Please select a letter to search for instructors by last name:</h6>
+              <ul>
+                <li><a href="#">A</a></li>
+                <li><a href="#">B</a></li>
+                <li><a href="#">C</a></li>
+                <li><a href="#">D</a></li>
+                <li><a href="#">E</a></li>
+                <li><a href="#">F</a></li>
+                <li><a href="#">G</a></li>
+                <li><a href="#">H</a></li>
+                <li><a href="#">I</a></li>
+                <li><a href="#">J</a></li>
+                <li><a href="#">K</a></li>
+                <li><a href="#">L</a></li>
+                <li><a href="#">M</a></li>
+                <li><a href="#">N</a></li>
+                <li><a href="#">O</a></li>
+                <li><a href="#">P</a></li>
+                <li><a href="#">Q</a></li>
+                <li><a href="#">R</a></li>
+                <li><a href="#">S</a></li>
+                <li><a href="#">T</a></li>
+                <li><a href="#">U</a></li>
+                <li><a href="#">V</a></li>
+                <li><a href="#">W</a></li>
+                <li><a href="#">X</a></li>
+                <li><a href="#">Y</a></li>
+                <li><a href="#">Z</a></li>
+              </ul>
+
+            </div>
+
+            <!-- search by collab sites -->
+            <div class="tabs-panel" id="panel-collab">
+              <h6>Available collaboration site categories:</h6>
+              <div class="row">
+                <div class="small-6 column">
+                  <ul>
+                    <li><a href="#">Academic Governance</a></li>
+                    <li><a href="#">Arts and Architecture</a></li>
+                    <li><a href="#">Basic Biomedical Sciences</a></li>
+                    <li><a href="#">College Academic Counseling</a></li>
+                    <li><a href="#">Common Collaboration &amp; Learning Environment</a></li>
+                    <li><a href="#">Dentistry</li>
+                    <li><a href="#">Education &amp; Information Studies</a></li>
+                    <li><a href="#">Engineering &amp; Applied Science</a></li>
+                    <li><a href="#">Health &amp; Wellness</a></li>
+                    <li><a href="#">Humanities</a></li>
+                    <li><a href="#">International Institute</a></li>
+                    <li><a href="#">IT Collaborations</a></li>
+                    <li><a href="#">Law</a></li>
+                    <li><a href="#">Letters &amp; Science Interdisciplinary</a></li>
+                    <li><a href="#">Library</a></li>
+                    <li><a href="#">Life Science</a></li>
+                  </ul>
+                </div>
+                <div class="small-6 column">
+                  <ul>
+                    <li><a href="#">Management</a></li>
+                    <li><a href="#">Medicine</a></li>
+                    <li><a href="#">Nursing</a></li>
+                    <li><a href="#">Office of Information Technology</a></li>
+                    <li><a href="#">Office of Instructional Development</a></li>
+                    <li><a href="#">Office of Residential Life</a></li>
+                    <li><a href="#">Physical Science</a></li>
+                    <li><a href="#">Public Affairs</a></li>
+                    <li><a href="#">Public Health</a></li>
+                    <li><a href="#">School of Music</a></li>
+                    <li><a href="#">Student Affairs</a></li>
+                    <li><a href="#">UCLA Recreation</a></li>
+                    <li><a href="#">UCOP Sandbox</a></li>
+                    <li><a href="#">UCSD</a></li>
+                    <li><a href="#">Unaffiliated Sites</a></li>
+                    <li><a href="#">School of Theater, Film, and Television</a></li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+    </div>
+
+
+
+    <!-- CCLE Maintenance -->
+    <div id="ccle-system" class="column medium-4 medium-pull-6 large-3">
+
+      <section class="maintenance">
+        <h5><strong>CCLE Maintenance</strong></h5>
+      </section>
+      <section class="tips-updates">
+        <h5><strong>Tips &amp; Updates</strong></h5>
+        <a href="https://docs.ccle.ucla.edu/w/Turnitin_Assignment_v2#Allow_resubmissions">Turn It In: Allow Resubmissions</a>
+      </section>
+
+      <section class="notices">
+        <h5><strong>CCLE Notices</strong></h5>
+
+        <article>
+          <h6><strong>Interested in working for CCLE?</strong></h6>
+              <p>We are looking for a full-time developer with design skills to help us develop innovated user experiences across the system from instructors designing and creating their course, to students interacting with their learning materials, and to staff supporting the system.</p>
+              <p><a href="http://hr.mycareer.ucla.edu/applicants/Central?quickFind=69130">Learn more and apply</a></p>
+        </article>
+
+        <article>
+          <h6><strong>Couns/PsychSvc (CAPS)</strong></h6>
+            <p>Counseling and Psychological Services (CAPS) offers services designed to foster the development of healthy well-being necessary for success in a complex global environment.</p>
+            <p><a href="http://www.counseling.ucla.edu/">www.counseling.ucla.edu</a></p>
+        </article>
+
+        <article>
+          <h6><strong>Center for Accessible Education (CAE)</strong></h6>
+            <p>The University provides services to students with disabilities and should any student require disability-related accommodations, they should contact the Center for Accessible Education at:</p>
+            <p><a href="http://www.cae.ucla.edu/">www.cae.ucla.edu</a></p>
+        </article>
+
+      </section>
+    </div>
+
+
+    <div class="column medium-1 large-1">
+      <!-- empty on purpose -->
+    </div>
+
+  </div>
+</div>
+<!-- END MAIN CONTENT -->
+
+<!-- FOOTER -->
+<footer>
+  <div class="row column">
+    <div id="copyright">&copy; 2016 UC Regents</div>
+    <div id="footer-links">
+      <ul>
+        <li><a href="https://ccle.ucla.edu/theme/uclashared/view.php?page=privacy">Privacy</a></li>
+        &#9679;
+        <li><a href="https://ccle.ucla.edu/theme/uclashared/view.php?page=copyright">Copyright</a></li>
+      </ul>
+    </div>
+  </div>
+</footer>
+
+</div> <!--end page-->
+</small>
+
